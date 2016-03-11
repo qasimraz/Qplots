@@ -1,0 +1,9 @@
+#Qplots
+
+Requirements:
+Python 2.7.x
+
+Modules:
+numpy
+matplotlib.pyplot
+pandas
