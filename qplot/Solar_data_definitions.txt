@@ -1,0 +1,17 @@
+; ***DATA DEFINITIONS***, number = 15 [field name, type, format, (Col. #, description)]
+; nominal_date_yyyymmdd                 R8   f12.3 (Column  1: Nominal Data Time, YYYYMMDD)
+; nominal_date_jdn                      R8   f12.3 (Column  2: Nominal Data Time, Julian Day Number)
+; avg_measurement_date_jdn              R8   f15.6 (Column  3: Average Data Time, Julian Day Number)
+; std_dev_measurement_date              R4    f7.4 (Column  4: Stdev of Average Data Time, days, 1 sigma)
+; tsi_1au                               R8   f10.4 (Column  5: Total Solar Irradiance (TSI) at 1-AU, W/m^2)
+; instrument_accuracy_1au               R4   e10.3 (Column  6: Instrument Accuracy in 1-AU TSI, W/m^2, 1 sigma)
+; instrument_precision_1au              R4   e10.3 (Column  7: Instrument Precision in TSI at 1-AU, W/m^2, 1 sigma)
+; solar_standard_deviation_1au          R4   e10.3 (Column  8: Solar Standard Deviation in 1-AU TSI, W/m^2, 1 sigma)
+; measurement_uncertainty_1au           R4   e10.3 (Column  9: Total Uncertainty in TSI at 1-AU, W/m^2, 1 sigma)
+; tsi_true_earth                        R8   f10.4 (Column 10: Total Solar Irradiance at Earth distance, W/m^2)
+; instrument_accuracy_true_earth        R4   e10.3 (Column 11: Instrument Accuracy at Earth distance, W/m^2, 1 sigma)
+; instrument_precision_true_earth       R4   e10.3 (Column 12: Instrument Precision at Earth distance, W/m^2, 1 sigma)
+; solar_standard_deviation_true_earth   R4   e10.3 (Column 13: Solar Standard Deviation in TSI at Earth, W/m^2, 1 sigma)
+; measurement_uncertainty_true_earth    R4   e10.3 (Column 14: Total Uncertainty in TSI at Earth distance, W/m^2, 1 sigma)
+; provisional_flag                      I2      i2 (Column 15: Provisional Flag, 1=provisional data, 0=final data)
+; ***END DATA DEFINITIONS***
