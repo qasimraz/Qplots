@@ -10,14 +10,14 @@ weather = pd.read_csv('weather.csv')
 time_average1 = []
 weather_data1 = []
 weather_data2 = []
-for i in range(1,31):
+for i in range(1, 31):
     time_average1.append(np.mean(df[df['Time'] == i].iloc[:, 11]))
     weather_data2.append(float(weather[weather['Time'] == i].iloc[:, 3]))
     weather_data1.append(float(weather[weather['Time'] == i].iloc[:, 2]))
-plt.plot(xrange(1,31), df[df['Name'] == 15].iloc[:, 11], label='Max Temp Pole:15', color='orange', alpha=0.7)
-plt.plot(xrange(1,31), weather_data1, label='Weather Temp High', color='red')
-plt.plot(xrange(1,31), weather_data2, label='Weather Temp Avg', color='green')
-plt.plot(xrange(1,31), time_average1, label='Average Max Temp', color='yellow')
+plt.plot(range(1, 31), df[df['Name'] == 15].iloc[:, 11], label='Max Temp Pole:15', color='orange', alpha=0.7)
+plt.plot(range(1, 31), weather_data1, label='Weather Temp High', color='red')
+plt.plot(range(1, 31), weather_data2, label='Weather Temp Avg', color='green')
+plt.plot(range(1, 31), time_average1, label='Average Max Temp', color='yellow')
 plt.ylabel('Temperature')
 plt.xlabel('Time (Day)')
 plt.title('Average Temperature Max')
@@ -28,14 +28,14 @@ plt.show()
 time_average1 = []
 weather_data1 = []
 weather_data2 = []
-for i in range(1,31):
+for i in range(1, 31):
     time_average1.append(np.mean(df[df['Time'] == i].iloc[:, 12]))
     weather_data2.append(float(weather[weather['Time'] == i].iloc[:, 3]))
     weather_data1.append(float(weather[weather['Time'] == i].iloc[:, 4]))
-plt.plot(xrange(1,31), df[df['Name'] == 15].iloc[:, 13], label='Min Temp Pole:15', color='orange', alpha=0.7)
-plt.plot(xrange(1,31), weather_data1, label='Weather Temp Low', color='red')
-plt.plot(xrange(1,31), weather_data2, label='Weather Temp Avg', color='green')
-plt.plot(xrange(1,31), time_average1, label='Average Min Temp', color='yellow')
+plt.plot(range(1, 31), df[df['Name'] == 15].iloc[:, 13], label='Min Temp Pole:15', color='orange', alpha=0.7)
+plt.plot(range(1, 31), weather_data1, label='Weather Temp Low', color='red')
+plt.plot(range(1, 31), weather_data2, label='Weather Temp Avg', color='green')
+plt.plot(range(1, 31), time_average1, label='Average Min Temp', color='yellow')
 plt.ylabel('Temperature')
 plt.xlabel('Time (Day)')
 plt.title('Average Temperature Min')
