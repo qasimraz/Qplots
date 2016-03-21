@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-# import func
 
 df = pd.read_csv('data_day_2.27.2016.csv')  # take data from csv make table
 weather = pd.read_csv('data_weather.csv')
