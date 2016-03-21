@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 # import func
 
-df = pd.read_csv('day.csv')  # take data from csv make table
-weather = pd.read_csv('weather.csv')
+df = pd.read_csv('data_day_2.27.2016')  # take data from csv make table
+weather = pd.read_csv('data_weather.csv')
 
 # The Max Weather Plot
 time_average1 = []

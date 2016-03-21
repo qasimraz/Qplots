@@ -1,3 +1,5 @@
+# Place this file in the folder containing .cisdl files
+
 import sys,csv,os
 
 '''Strings'''
