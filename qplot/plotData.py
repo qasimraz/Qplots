@@ -23,6 +23,7 @@ plt.xlabel('Time (Day)')
 plt.title('Average Temperature Max')
 plt.legend(loc='upper right', shadow=True)
 plt.show()
+plt.savefig('plots_png/pole_15_weather_temp.png')
 
 # Min Weather Plot
 time_average1 = []
