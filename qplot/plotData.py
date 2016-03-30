@@ -2,15 +2,16 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-#df = pd.read_csv('data_day_2.27.2016.csv')  # take data from csv make table
+#df = pd.read_csv('data_day_2.27.2016.csv')
+
+#  take data from csv make table
 df = pd.read_csv('3.19.2016/data_day_3.19.2016.csv')
 weather = pd.read_csv('data_weather.csv')
 
 # The Max Weather Plot
-time_average1 = []
 weather_data1 = []
 weather_data2 = []
-for i in range(1, 31):
+for i in range(1, 31): #30 days
     time_average1.append(np.mean(df[df['Time'] == i].iloc[:, 11]))
     weather_data2.append(float(weather[weather['Time'] == i].iloc[:, 3]))
     weather_data1.append(float(weather[weather['Time'] == i].iloc[:, 2]))
@@ -24,6 +25,7 @@ plt.title('Average Temperature Max')
 plt.legend(loc='upper right', shadow=True)
 plt.show()
 plt.savefig('plots_png/pole_15_weather_temp.png')
+time_average1 = []
 
 # Min Weather Plot
 time_average1 = []
